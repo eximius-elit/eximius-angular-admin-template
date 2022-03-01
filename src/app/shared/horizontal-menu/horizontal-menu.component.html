@@ -1,0 +1,39 @@
+<!--navigation-->
+<div class="nav-container">
+    <div class="mobile-topbar-header">
+        <div>
+            <img src="assets/images/logo-icon.png" class="logo-icon" alt="logo icon">
+        </div>
+        <div>
+            <h4 class="logo-text">Rocker</h4>
+        </div>
+        <div class="toggle-icon ms-auto"><i class='bx bx-arrow-to-left'></i>
+        </div>
+    </div>
+    <nav class="topbar-nav is-hoverable">
+        <ul class="metismenu" id="menu">
+    
+            <li *ngFor="let menuItem of menuItems" [routerLinkActive]="menuItem.submenu.length != 0 ? '' : 'active'"
+            [routerLinkActiveOptions]="{exact: true}">
+                <a [routerLink]="menuItem.class === '' ? [menuItem.path] : null" [ngClass]="menuItem.submenu.length != 0 ? 'has-arrow' : ''">
+                    <div class="parent-icon"><i [ngClass]="[menuItem.icon]"></i></div>
+                    <div class="menu-title">{{menuItem.title}}</div>
+                </a>
+                <!-- Level Two-->
+                <ul  *ngIf="menuItem.submenu.length > 0">
+                    <li *ngFor="let menuSubItem of menuItem.submenu" [routerLinkActive]="menuSubItem.submenu.length > 0 ? '' : 'active'">
+                        <a [routerLink]="menuSubItem.submenu.length > 0 ? null : [menuSubItem.path]"><i [ngClass]="[menuSubItem.icon]"></i>{{menuSubItem.title}}</a>
+                          <ul *ngIf="menuSubItem.submenu.length > 0">
+                              <li *ngFor="let menuSubsubItem of menuSubItem.submenu" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" >
+                                  <a [routerLink]="[menuSubsubItem.path]">
+                                      <i [ngClass]="[menuSubsubItem.icon]"></i>{{menuSubsubItem.title}}</a>
+                              </li>
+                          </ul>
+                    </li>
+                </ul>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+<!--end navigation-->

@@ -1,0 +1,657 @@
+
+@media screen and (max-width: 1280px) {
+
+	.topbar-logo-header{
+
+		display: none;
+
+	}
+
+	.page-wrapper {
+
+		margin-top: 60px;
+
+	}
+
+	.mobile-toggle-menu {
+
+
+		display: block;
+
+
+	}
+
+	.nav-container {
+
+		position: fixed;
+
+		width: 260px;
+
+		right: 0;
+
+		left: -260px;
+
+		z-index: 16;
+
+		border-bottom: 1px solid #e4e4e4;
+
+		background-clip: border-box;
+
+		background: #ffffff;
+
+		height: 100%;
+
+		padding: 10px;
+
+		display: flex;
+
+		align-items: start;
+
+		justify-content: flex-start;
+
+		overflow-y: scroll;
+
+	    overflow-x: hidden;
+
+	}
+
+	.wrapper.toggled .nav-container {display: flex;left: 0px;}
+
+	.wrapper.toggled .mobile-topbar-header {
+
+		display: flex;
+
+		align-items: center;
+
+		height: 60px;
+
+		background: white;
+
+		border-bottom: 1px solid #f1f1f1;
+
+		background-clip: border-box;
+
+		position: fixed;
+
+		width: 260px;
+
+		left: 0;
+
+		top: 0;
+
+		right: 0;
+
+		z-index: 10;
+
+		padding: 0 30px;
+
+	}
+
+	.wrapper.toggled .overlay {
+
+		position: fixed;
+
+		top: 0;
+
+		right: 0;
+
+		bottom: 0;
+
+		left: 0;
+
+		background: #000;
+
+		opacity: 0.6;
+
+		z-index: 15;
+
+		display: block;
+
+		cursor: move;
+
+		transition: all .2s ease-out;
+
+	}
+
+	.left-topbar {
+
+		width: auto;
+
+	}
+
+	.search-bar {
+
+		padding: 0rem 0rem 0 30px;
+
+	}
+
+	.search-bar-box {
+
+		padding-left: 0px;
+
+	}
+
+	.email-header {
+
+		height: auto;
+
+	}
+
+	.email-content {
+
+		padding: 100px 0px 0px 0px;
+
+	}
+
+}
+
+
+@media screen and (max-width: 1024px) {
+
+
+	.topbar {
+
+
+		left: 0px !important;
+
+
+	}
+
+
+	.mobile-search-icon {
+
+
+		display: block;
+
+
+	}
+
+
+	
+
+
+	
+	.page-footer {
+
+
+		left: 0px;
+
+
+	}
+
+
+	.search-bar {
+
+
+		display: none;
+
+
+	}
+
+
+	.full-search-bar {
+
+
+		display: flex;
+
+
+		align-items: center;
+
+
+		width: 100%;
+
+
+		position: absolute;
+
+
+		left: 0;
+
+
+		z-index: 100;
+
+
+		background: #22263a;
+
+
+		height: 60px;
+
+
+		padding: 0rem 1.4rem;
+
+
+	}
+
+
+	.search-bar-box {
+
+
+		width: 100%;
+
+
+	}
+
+
+	.search-close {
+
+
+		display: block;
+
+
+	}
+
+
+	.search-show {
+
+
+		left: 15px;
+
+
+		right: auto;
+
+
+	}
+
+
+	.search-control {
+
+
+		background-color: #fff;
+
+
+		border: 1px solid #f2efef00;
+
+
+		padding-left: 2.5rem;
+
+
+	}
+
+
+	.wrapper.toggled .overlay {
+
+
+		position: fixed;
+
+
+		top: 0;
+
+
+		right: 0;
+
+
+		bottom: 0;
+
+
+		left: 0;
+
+
+		background: #000;
+
+
+		opacity: 0.6;
+
+
+		z-index: 10;
+
+
+		display: block;
+
+
+		cursor: move;
+
+
+		transition: all .2s ease-out;
+
+
+	}
+
+
+	.error-404 {
+
+
+		height: auto;
+
+
+		padding: 6.0rem 1rem;
+
+
+	}
+
+
+	.chat-header {
+
+
+		border-top-left-radius: 0.25rem;
+
+
+	}
+
+
+	.chat-footer {
+
+
+		border-bottom-left-radius: 0.25rem;
+
+
+	}
+
+
+	.chat-sidebar {
+
+
+		left: -370px;
+
+
+	}
+
+
+	.chat-content {
+
+
+		margin-left: 0px;
+
+
+	}
+
+
+	.chat-header {
+
+
+		left: 0px;
+
+
+	}
+
+
+	.chat-footer {
+
+
+		left: 0px;
+
+
+	}
+
+
+	/* chat toggled css */
+
+
+	.chat-toggled .chat-sidebar {
+
+
+		left: 0px;
+
+
+	}
+
+
+	.chat-toggled .overlay {
+
+
+		position: absolute;
+
+
+		top: 0;
+
+
+		right: 0;
+
+
+		bottom: 0;
+
+
+		left: 340px;
+
+
+		background: #000;
+
+
+		opacity: 0.5;
+
+
+		z-index: 11;
+
+
+		display: block;
+
+
+		cursor: move;
+
+
+		transition: all .3s ease-out;
+
+
+	}
+
+
+	.email-header {
+
+
+		border-top-left-radius: 0.25rem;
+
+
+	}
+
+
+	.email-sidebar {
+
+
+		left: -280px;
+
+
+	}
+
+
+	.email-content {
+
+
+		margin-left: 0px;
+
+
+	}
+
+
+	.email-header {
+
+
+		left: 0px;
+
+
+	}
+
+
+	/* email toggled */
+
+
+	.email-toggled .email-sidebar {
+
+
+		left: 0px;
+
+
+	}
+
+
+	.email-toggled .overlay {
+
+
+		position: absolute;
+
+
+		top: 0;
+
+
+		right: 0;
+
+
+		bottom: 0;
+
+
+		left: 250px;
+
+
+		background: #000;
+
+
+		opacity: 0.5;
+
+
+		z-index: 9;
+
+
+		display: block;
+
+
+		cursor: move;
+
+
+		transition: all .3s ease-out;
+
+
+	}
+
+
+}
+
+
+@media screen and (max-width: 991px) {
+
+
+	.section-authentication-signin {
+
+
+		height: 100%;
+
+
+		margin-top: 6rem;
+
+
+		margin-bottom: 2rem;
+
+
+	}
+
+
+	.authentication-reset-password {
+
+
+		height: auto;
+
+
+		padding: 2.0rem 1rem;
+
+
+	}
+
+
+	.authentication-lock-screen {
+
+
+		height: auto;
+
+
+		padding: 2.0rem 1rem;
+
+
+	}
+
+
+	.compose-mail-popup {
+
+
+		width: auto;
+
+
+		position: fixed;
+
+
+		bottom: -30px;
+
+
+		right: 0;
+
+
+		left: 0;
+
+
+	}
+
+
+}
+
+
+@media screen and (max-width: 767px) {
+
+
+	.user-box .user-info {
+
+
+		display: none;
+
+
+	}
+
+
+	.authentication-forgot {
+
+
+		height: auto;
+
+
+		padding: 2.5rem 1rem;
+
+
+	}
+
+
+}
+
+
+@media screen and (max-width: 620px) {
+
+
+	.topbar .navbar .dropdown-menu::after {
+
+
+		display: none;
+
+
+	}
+
+
+	.topbar .navbar .dropdown {
+
+
+		position: static !important;
+
+
+	}
+
+
+	.topbar .navbar .dropdown-menu {
+
+
+		width: 100% !important;
+
+
+	}
+
+
+}
+
+
+@media screen and (max-width: 520px) {
+
+
+	.chat-footer-menu,
+
+
+	.chat-top-header-menu {
+
+
+		display: none;
+
+
+	}
+
+
+}
